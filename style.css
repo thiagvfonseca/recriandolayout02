@@ -1,11 +1,17 @@
+:root {
+  --green-color: #00bfa6;
+}
+
 body {
   background: #2c2b3d;
+
   color: #fff;
+  font-family: "JetBrains Mono", monospace;
 }
 
 #page {
-  width: 1000px;
-  margin: auto;
+  margin: 70px 100px 20px;
+  text-align: center;
 }
 
 nav {
@@ -16,45 +22,101 @@ nav {
   margin: 70px auto 100px;
 }
 
+h3 {
+  display: flex; /* Utilização da Flexbox para ajustar o <h3> e <img> que formam a logo. */
+  align-items: center;
+
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h3:hover {
+  color: var(--green-color);
+  font-weight: normal;
+
+  cursor: pointer;
+}
+
+#logo {
+  width: 14px;
+  height: 16px;
+  margin: 1.5px;
+}
+
 ul {
   display: flex;
   gap: 64px;
 
-  text-decoration: none;
   list-style: none;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+ul li a:hover {
+  color: var(--green-color);
+  font-size: 14px;
+  font-weight: normal;
 }
 
 main {
   display: flex;
-  gap: 80px
+  gap: 80px;
+
+  margin-bottom: 160px;
 }
 
 #text {
-  text-align: center;
+  width: 600px;
 }
 
 h1 {
   margin-bottom: 60px;
 }
 
+span {
+  color: var(--green-color);
+  font-weight: bold;
+}
+
+h1 span {
+  display: inline-flex;
+}
+
 p {
   color: #c2c2c2;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
 }
 
 #line {
-  
-  border-top: 1px solid #00BFA6;
+  border-top: 1px solid var(--green-color);
 }
 
 footer {
   width: 600px;
-  border-top: 1px solid #00BFA6;
+  border-top: 1px solid var(--green-color);
   margin: 30px auto;
   padding-top: 30px;
   text-align: center;
 }
 
-#lock {
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+footer a:hover {
+  color: var(--green-color);
+  font-weight: normal;
+}
+
+#padlock {
   position: fixed;
   bottom: 1%;
   left: 1%;
